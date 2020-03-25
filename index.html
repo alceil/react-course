@@ -21,12 +21,18 @@
             console.log(e.target);
 
         }
+        handleMouseOver(e)
+        {
+            console.log(e.target,e.pageX);
+
+        }
       render(){
         return(
           <div className="app-content">
             <h1>Hello, ninjas!</h1>
             <p>Your name is {this.state.name} and age is{this.state.age}</p>
-            <button onClick={}>Click me</button>
+            <button onClick={this.handleClick}>Click me</button>
+            <button onMouseOver={this.handleMouseOver}>Hover Me</button>
           </div>
         )
       }
