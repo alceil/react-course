@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app"></div>
+    <script>
+        class App extends React.Component{
+            render(){
+                return(
+                    <div className="app-content">
+                     <h1>Hello, Kindies</h1>
+                     <p> Random  number:{math.random()*10}</p>   
+                    </div>
+                )
+            }
+        }
+        React.Dom(<App/>,document.getElementById('app'))
+    </script>
     
 </body>
 </html>
